@@ -36,7 +36,7 @@ const install = function (Vue, initConf = {}) {
 const initVueRouterGuard = function (Vue, { vueRouter, ignoredViews, trackOnNextTick }) {
   // Flatten routes name
   if (ignoredViews) {
-    ignoredViews = ignoredViews.map(view => view.toLowerCase())
+    ignoredViews = ignoredViews.map(view => view.toLowerCase());
   }
 
   vueRouter.afterEach(to => {
